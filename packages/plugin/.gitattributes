@@ -1,0 +1,5 @@
+export-ignore phpunit.xml
+export-ignore src
+export-ignore node_modules
+export-ignore tests
+export-ignore setup

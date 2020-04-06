@@ -1,0 +1,5 @@
+{
+    "name": "sofokus/wp-smtp",
+    "type": "wordpress-muplugin",
+    "version": "master"
+}

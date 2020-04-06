@@ -1,0 +1,7 @@
+export-ignore tests
+export-ignore dev
+export-ignore behat.yml
+export-ignore behat.local.yml
+export-ignore behat.local.sample.yml
+export-ignore phpunit.xml
+export-ignore setup

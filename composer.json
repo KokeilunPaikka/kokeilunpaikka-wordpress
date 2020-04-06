@@ -1,0 +1,115 @@
+{
+    "name": "sofokus/motiva",
+    "type": "project",
+    "description": "Motiva WordPress project",
+    "authors": [],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/*",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://wp-languages.github.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\Lib\\": "lib/"
+        },
+        "files": [
+            "lib/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "ext-mbstring": "*",
+        "ext-curl": "*",
+        "roave/security-advisories": "dev-master",
+        "vlucas/phpdotenv": "*",
+        "composer/installers": "*",
+        "koodimonni/composer-dropin-installer": "1.2.*",
+        "johnpbloch/wordpress-core-installer": "*",
+        "johnpbloch/wordpress-core": "*",
+        "sofokus/wp-sentry": "dev-master",
+        "sofokus/theme": "dev-master",
+        "sofokus/plugin": "dev-master",
+        "sofokus/wp-smtp": "dev-master",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "wpackagist-plugin/ninjafirewall": "*",
+        "wpackagist-plugin/duplicate-post": "*",
+        "wpackagist-plugin/wp-rest-api-v2-menus": "*",
+        "koodimonni-language/fi": "*",
+        "koodimonni-language/sv_se": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "*",
+        "behat/behat": "*",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "sofokus/wordpress-behat-extension": "*",
+        "sofokus/test-mail": "dev-master",
+        "wpackagist-plugin/query-monitor": "*"
+    },
+    "extra": {
+        "installer-paths": {
+            "public_html/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "public_html/wp-content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "public_html/wp-content/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        },
+        "dropin-paths": {
+            "public_html/wp-content/languages/": [
+                "vendor:koodimonni-language"
+            ],
+            "public_html/wp-content/languages/plugins/": [
+                "vendor:koodimonni-plugin-language"
+            ],
+            "public_html/wp-content/languages/themes/": [
+                "vendor:koodimonni-theme-language"
+            ],
+            "public_html/wp-content/mu-plugins/": [
+                "package:sofokus/wp-smtp",
+                "package:sofokus/test-mail",
+                "package:sofokus/wp-sentry:sentry-init.php"
+            ]
+        },
+        "wordpress-install-dir": "public_html"
+    },
+    "config": {
+        "dropin-installer": "copy"
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "App\\Lib\\Installer::installThemeAndPlugin",
+            "App\\Lib\\UploadMove::uploadMoveFrom"
+        ],
+        "post-install-cmd": [
+            "App\\Lib\\UploadMove::uploadMoveTo"
+        ],
+        "pre-update-cmd": [
+            "App\\Lib\\UploadMove::uploadMoveFrom"
+        ],
+        "post-update-cmd": [
+            "App\\Lib\\UploadMove::uploadMoveTo"
+        ]
+    }
+}

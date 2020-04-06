@@ -1,0 +1,7 @@
+vendor/
+node_modules/
+assets/
+
+.DS_Store
+[Tt]humbs.db
+.idea

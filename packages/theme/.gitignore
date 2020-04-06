@@ -1,0 +1,8 @@
+vendor/
+node_modules/
+assets/
+
+behat.yml
+.DS_Store
+[Tt]humbs.db
+.idea

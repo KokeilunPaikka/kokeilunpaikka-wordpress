@@ -1,0 +1,139 @@
+# behat.sample.yml
+#
+# Configuration for the Behat testing framework.
+#
+# Copy this file and rename it to `behat.yml` to configure Behat for your local
+# environment.
+
+default:
+
+    suites:
+
+        default:
+
+            paths: [ %paths.base%/tests/Behat ]
+            contexts: [ Sofokus\Theme\Tests\Behat\Bootstrap\FeatureContext ]
+            filters:
+                tags: "~@mink:browserstack"
+
+    extensions:
+
+        Behat\MinkExtension:
+
+            # Set the URL where your local installation is available from
+            base_url: http://localhost
+
+            sessions:
+
+                # Default to headless JS sessions with Zombie.js, see README for
+                # installation instructions
+                default:
+                    zombie: ~
+
+                # Config for Browserstack, See README on usage.
+                browserstack:
+                    browser_stack:
+                        username: <browserstackusername>
+                        access_key: <browserstackaccesskey>
+                        browser: Chrome
+                        capabilities:
+                            browser: Chrome
+                            browserstack-tunnel: true
+                            browserstack-debug: true
+                            os: Windows
+                            os_version: 10
+                            project: theme
+
+# Browserstack testing for Windows Firefox
+# Run with behat -p firefox_windows
+firefox_windows:
+    suites:
+        default:
+            filters: ~
+    extensions:
+        Behat\MinkExtension:
+            sessions:
+                browserstack:
+                    browser_stack:
+                        browser: Firefox
+                        capabilities:
+                            browser: Firefox
+
+# Browserstack testing for OSX Firefox
+# Run with behat -p firefox_osx
+firefox_osx:
+    suites:
+        default:
+            filters: ~
+    extensions:
+        Behat\MinkExtension:
+            sessions:
+                browserstack:
+                    browser_stack:
+                        browser: Firefox
+                        capabilities:
+                            browser: Firefox
+                            os: OSX
+                            os_version: El Capitan
+
+# Browserstack testing for Windows Chrome
+# Run with behat -p chrome_windows
+chrome_windows:
+    suites:
+        default:
+            filters: ~
+    extensions:
+        Behat\MinkExtension:
+            sessions:
+                browserstack:
+                    browser_stack:
+                        browser: Chrome
+                        capabilities:
+                            browser: chrome
+
+# Browserstack testing for OSX Chrome
+# Run with behat -p chrome_osx
+chrome_osx:
+    suites:
+        default:
+            filters: ~
+    extensions:
+        Behat\MinkExtension:
+            sessions:
+                browserstack:
+                    browser_stack:
+                        browser: Chrome
+                        capabilities:
+                            browser: Chrome
+                            os: OSX
+                            os_version: El Capitan
+
+# Browserstack testing for Windows IE
+# Run with behat -p ie_windows
+ie_windows:
+    suites:
+        default:
+            filters: ~
+    extensions:
+        Behat\MinkExtension:
+            sessions:
+                browserstack:
+                    browser_stack:
+                        browser: IE
+                        capabilities:
+                            browser: IE
+
+# Browserstack testing for Windows Edge
+# Run with behat -p edge_windows
+edge_windows:
+    suites:
+        default:
+            filters: ~
+    extensions:
+        Behat\MinkExtension:
+            sessions:
+                browserstack:
+                    browser_stack:
+                        browser: Edge
+                        capabilities:
+                            browser: Edge

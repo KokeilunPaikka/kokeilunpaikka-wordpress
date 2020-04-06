@@ -1,0 +1,29 @@
+{
+    "name": "sofokus/plugin",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Sofokus",
+            "email": "webmaster@sofokus.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Sofokus\\Plugin\\": "classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sofokus\\Plugin\\Tests\\": "tests/"
+        }
+    },
+
+    "minimum-stability": "stable",
+
+    "require": {},
+
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}

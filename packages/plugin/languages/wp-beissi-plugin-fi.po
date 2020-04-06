@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Beissi Plugin\n"
+"POT-Creation-Date: 2017-05-23 10:48+0200\n"
+"PO-Revision-Date: 2017-05-23 10:48+0200\n"
+"Last-Translator: \n"
+"Language-Team: Sofokus <webmaster@sofokus.com>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _e;__;_x:1,2c\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#~ msgid "Continuous search"
+#~ msgstr "Jatkuva haku"
+
+#~ msgid "Persons"
+#~ msgstr "Henkilöt"
+
+#~ msgid "Person"
+#~ msgstr "Henkilö"
+
+#~ msgid "Add New"
+#~ msgstr "Lisää uusi"
+
+#~ msgid "Add New Person"
+#~ msgstr "Lisää uusi Henkilö"
+
+#~ msgid "Edit Person"
+#~ msgstr "Muokkaa Henkilöä"
+
+#~ msgid "New Person"
+#~ msgstr "Uusi Henkilö"
+
+#~ msgid "View Persons"
+#~ msgstr "Näytä Henkilöt"
+
+#~ msgid "Search Person"
+#~ msgstr "Etsi Henkilö"
+
+#~ msgid "No Persons Found"
+#~ msgstr "Henkilöitä ei löytynyt"
+
+#~ msgid "No Persons Found in Trash"
+#~ msgstr "Henkilöitä ei löytynyt roskakorista"
+
+#~ msgctxt "slug"
+#~ msgid "person"
+#~ msgstr "henkilo"
+
+#~ msgid "Foundations"
+#~ msgstr "Rahoittajat"
+
+#~ msgid "Foundation"
+#~ msgstr "Rahoittaja"
+
+#~ msgid "Add New Foundation"
+#~ msgstr "Lisää uusi Rahoittaja"
+
+#~ msgid "Edit Foundation"
+#~ msgstr "Muokkaa Rahoittajaa"
+
+#~ msgid "New Foundation"
+#~ msgstr "Uusi Rahoittaja"
+
+#~ msgid "View Foundations"
+#~ msgstr "Näytä Rahoittajat"
+
+#~ msgid "Search Foundation"
+#~ msgstr "Etsi Rahoittaja"
+
+#~ msgid "No Foundations Found"
+#~ msgstr "Rahoittajia ei löytynyt"
+
+#~ msgid "No Foundations Found in Trash"
+#~ msgstr "Rahoittajia ei löytynyt roskakorista"
+
+#~ msgctxt "slug"
+#~ msgid "foundation"
+#~ msgstr "rahoittaja"
+
+#~ msgid "Grants"
+#~ msgstr "Rahoitukset"
+
+#~ msgid "Grant"
+#~ msgstr "Rahoitus"
+
+#~ msgid "Add New Grant"
+#~ msgstr "Lisää uusi Rahoitus"
+
+#~ msgid "Edit Grant"
+#~ msgstr "Muokkaa Rahoitusta"
+
+#~ msgid "New Grant Category"
+#~ msgstr "Uusi Hakuala"
+
+#~ msgid "View Grants"
+#~ msgstr "Näytä Rahoitukset"
+
+#~ msgid "Search Grant"
+#~ msgstr "Etsi Rahoitus"
+
+#~ msgid "No Grants Found"
+#~ msgstr "Rahoituksia ei löytynyt"
+
+#~ msgid "No Grants Found in Trash"
+#~ msgstr "Rahoituksia ei löytynyt roskakorista"
+
+#~ msgctxt "slug"
+#~ msgid "grant"
+#~ msgstr "rahoitus"
+
+#~ msgid "Grant Categories"
+#~ msgstr "Hakualat"
+
+#~ msgid "Grant Category"
+#~ msgstr "Hakuala"
+
+#~ msgid "Parent Category:"
+#~ msgstr "Yläkategoria:"
+
+#~ msgid "Grant categories"
+#~ msgstr "Hakualat"
+
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgid "The official name for the foundation"
+#~ msgstr "Rahoittajan virallinen nimi"
+
+#~ msgid "Website"
+#~ msgstr "Kotisivu"
+
+#~ msgid "Email address"
+#~ msgstr "Sähköpostiosoite"
+
+#~ msgid "Email"
+#~ msgstr "Sähköposti"
+
+#~ msgid "Phone"
+#~ msgstr "Puhelin"
+
+#~ msgid "The official name for the grant."
+#~ msgstr "Rahoituksen virallinen nimi."
+
+#~ msgid "Select all those foundations which offers this grant."
+#~ msgstr "Valitse kaikki ne rahoittajat jotka tarjoavat tämän rahoituksen."
+
+#~ msgid "Application period starts"
+#~ msgstr "Haku alkaa"
+
+#~ msgid "Application period ends"
+#~ msgstr "Haku päättyy"
+
+#~ msgid "Undefined period start?"
+#~ msgstr "Määrittelemätön haun aloituspäivä?"
+
+#~ msgid "Undefined period end?"
+#~ msgstr "Määrittelemätön haun päättymispäivä?"
+
+#~ msgid "Hide period start date?"
+#~ msgstr "Piilota haun alkupäivämäärä?"
+
+#~ msgid "Continuous search?"
+#~ msgstr "Jatkuva haku?"
+
+#~ msgid "Special conditions"
+#~ msgstr "Erityisehdot"
+
+#~ msgid "Application terms"
+#~ msgstr "Hakuehdot"
+
+#~ msgid "Contact information"
+#~ msgstr "Yhteystiedot"
+
+#~ msgid "No date set"
+#~ msgstr "Ei päivämäärää asetettu"
+
+#~ msgid "No foundations set"
+#~ msgstr "Ei Rahoittajia asetettu"
