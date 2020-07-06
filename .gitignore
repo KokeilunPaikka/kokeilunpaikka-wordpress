@@ -10,6 +10,7 @@ public_html/
 !.dockerdata/.gitkeep
 !.dockerdata/nginx/wp.conf
 !.dockerdata/php/pool.conf
+.htaccess   
 
 .env*
 .tests_running
@@ -18,11 +19,10 @@ behat.yml
 behat.yaml
 *.log
 studio.json
+*.sql
 
-!.env.example
-!.env.docker
-!.env.testing.example
+.phpunit.result.cache
+
+!.env.sample
+!.env.testing.sample
 !.gitkeep
-
-.wakatime-project
-.htaccess

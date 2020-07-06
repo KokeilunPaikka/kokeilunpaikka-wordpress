@@ -8,20 +8,20 @@ default:
                 - \Sofokus\WordPressBehatExtension\Context\WordPressMailContext
     extensions:
         Sofokus\WordPressBehatExtension:
-            site_url: http://wpprojectbase.app
+            site_url: http://nginx
             overwrite_config: false
             install_muplugins: false
             flush_database: true
             path: '%paths.base%/public_html'
             connection:
-                host: 127.0.0.1
-                db: 'project_testdb'
-                username: 'project_testuser'
-                password: 'project_testpswd'
+                host: 'db_test'
+                db: 'wordpress_db'
+                username: 'root'
+                password: ''
             mail:
                 directory: './tmp/mail'
         Behat\MinkExtension:
-            base_url: http://wpprojectbase.app # set this to the site url you want to test
+            base_url: http://nginx # set this to the site url you want to test
             browser_name: goutte
             default_session: goutte
             sessions:

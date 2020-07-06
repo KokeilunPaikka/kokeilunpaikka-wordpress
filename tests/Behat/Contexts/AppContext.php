@@ -96,7 +96,7 @@ class AppContext extends WordPressContext
         global $table_prefix;
 
         //$dotenv = \Dotenv\Dotenv::create(self::$appRoot, '.env.testing');
-        $dotenv = \Dotenv\Dotenv::createImmutable(self::$appRoot, '.env.testing');
+        $dotenv = \Dotenv\Dotenv::createUnsafeImmutable(self::$appRoot, '.env.testing');
 
         $dotenv->load();
 

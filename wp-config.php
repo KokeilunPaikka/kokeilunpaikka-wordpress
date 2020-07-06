@@ -20,11 +20,11 @@ if (!$running_tests) {
 }
 
 // Environment config
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
 $dotenv->load();
 $dotenv->required([
     'DB_NAME', 'DB_USER', 'DB_PASSWORD',
-    'APP_ENV', 'APP_DOMAIN', 'APP_PROTOCOL'
+    'APP_DOMAIN', 'APP_PROTOCOL'
 ]);
 
 /**==================================================================================

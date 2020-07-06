@@ -94,6 +94,7 @@ class Plugin
     function allowedBlockTypes($allowed_blocks, $post)
     {
         $allowed_blocks = [
+            'core/columns',
             'core/paragraph',
             'core/heading',
             'core/subhead',
