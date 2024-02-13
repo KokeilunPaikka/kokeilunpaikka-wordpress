@@ -53,7 +53,7 @@ class Plugin
             }
         }
 
-        add_filter('allowed_block_types', [$this, 'allowedBlockTypes'], 10, 2);
+        add_filter('allowed_block_types_all', [$this, 'allowedBlockTypes'], 10, 2);
 
         $this->initialized = true;
     }
@@ -91,7 +91,7 @@ class Plugin
     }
 
 
-    function allowedBlockTypes($allowed_blocks, $post)
+    function allowedBlockTypes($allowed_blocks, $block_editor_context)
     {
         $allowed_blocks = [
             'core/columns',

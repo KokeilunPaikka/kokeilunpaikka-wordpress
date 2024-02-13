@@ -7,7 +7,6 @@
             "email": "webmaster@sofokus.com"
         }
     ],
-
     "autoload": {
         "psr-4": {
             "Sofokus\\Theme\\": "classes/"
@@ -18,17 +17,9 @@
             "Sofokus\\Theme\\Tests\\": "tests/"
         }
     },
-
     "minimum-stability": "stable",
-
     "require": {},
-
     "require-dev": {
-        "phpunit/phpunit": "*",
-        "behat/behat": "*",
-        "behat/mink": "*",
-        "behat/mink-extension": "*",
-        "behat/mink-zombie-driver": "*",
-        "behat/mink-selenium2-driver": "*"
+        "phpunit/phpunit": "*"
     }
 }

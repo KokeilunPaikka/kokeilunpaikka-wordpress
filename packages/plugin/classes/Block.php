@@ -25,7 +25,7 @@ abstract class Block
         add_action('acf/init', [$this, 'registerBlock']);
         add_action('acf/init', [$this, 'registerFields']);
 
-        add_filter('allowed_block_types', [$this, 'allowBlockType'], 11, 2);
+        add_filter('allowed_block_types_all', [$this, 'allowBlockType'], 11, 2);
     }
 
     /**
@@ -62,7 +62,7 @@ abstract class Block
      * @param $post
      * @return array
      */
-    function allowBlockType($allowed_blocks, $post)
+    function allowBlockType($allowed_blocks, $block_editor_context)
     {
         if (is_array($allowed_blocks)) {
             array_push($allowed_blocks, 'acf/' . $this->name);
